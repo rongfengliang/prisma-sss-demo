@@ -1,0 +1,16 @@
+{
+    "request": {
+      "method": "POST",
+      "url": "/webhook"
+    },
+    "response": {
+      "status": 200,
+       "body":"{{{request.body}}}",
+       "headers": {
+        "TOKEN": "{{request.headers.TOKEN}}",
+        "URL":"{{request.url}}",
+        "content-type":"application/json"
+      },
+      "transformers": ["response-template"]
+    }
+}

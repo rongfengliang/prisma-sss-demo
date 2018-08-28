@@ -1,0 +1,6 @@
+endpoint: http://localhost:4466
+datamodel: datamodel.graphql
+subscriptions:
+  welcomeNewUser:
+    webhook: http://mock:8080/webhook
+    query: subscription.graphql
